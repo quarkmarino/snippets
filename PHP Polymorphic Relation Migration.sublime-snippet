@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\$table->integer('${1}_id')->unsigned()->nullable();
+\$table->string('${1}_type')->nullable();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>poly</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

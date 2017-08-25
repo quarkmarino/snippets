@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+use Illuminate\Foundation\Testing\WithoutMiddleware;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+
+class ${1}Test extends TestCase
+{
+	use DatabaseTransactions;
+
+	/** @test */
+	public function ${2}()
+	{
+		// Given. This worlds exists ():
+		// factory(<class_name>, amnt)->create(overrides[]);	//usually uses factory models
+		${3}
+
+		// When. An action is executed ():
+		// ... Some query, or scope or database related action
+		${4}
+
+		// Then. Whats espected to happend ():
+		// Verify that what gets returned is what we expect, usually this is were phpunit assertions goes
+		${5}
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tcase</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
